@@ -76,20 +76,9 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+           <Text style={styles.tag}>预售</Text>
+           <Text style={styles.tag1}>停止营业</Text>
+         
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -112,6 +101,31 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  tag: {
+    fontSize: 20,
+    fontWeight: '400',
+    marginLeft: 16,
+    width: 124,
+    height: 32,
+    borderRadius: 4,
+    backgroundColor: '#F5F6F7',
+    borderWidth: 1,
+    borderColor: '#C8C9CC',
+    paddingHorizontal: 12,
+    paddingVertical: 4
+  },
+  tag1: {
+    fontSize: 20,
+    fontWeight: '400',
+    marginLeft: 16,
+    width: 124,
+    height: 32,
+    borderRadius: 4,
+    backgroundColor: '#F5F6F7',
+    borderColor: '#C8C9CC',
+    paddingHorizontal: 12,
+    paddingVertical: 4
   },
 });
 
